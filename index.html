@@ -1,0 +1,74 @@
+<!-- HTML Forms with dom manipulation  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="formfevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <form id="form">
+                <h1>Personal Details</h1>
+                <div id="name">
+                    <figure>
+                        <input type="text" name="fname" id="fname">
+                        <figcaption>
+                            <label for="fname" class="namelabel">First Name</label>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <input type="text" name="lname" id="lname">
+                        <figcaption>
+                            <label for="lname" class="namelabel">Last Name</label>
+                        </figcaption>
+                    </figure>                
+                </div>
+                <div id="adddetails">
+                    
+                    <label for="address">Address</label>
+                    <textarea id="address" maxlength="50" placeholder="Enter your address here" wrap="soft" style="resize: none;"></textarea>
+                    <br>
+                    <label for="pincode">Pincode</label>
+                    <input type="number" name="pin" id="pin" maxlength="6"><br>
+                    Gender
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="female" value="female">
+                    <label for="Male">Female</label>
+                    <input type="radio" name="Gender" id="other" value="other"> 
+                    <label for="Other">Other</label><br>
+                    Please select food: <br>
+        
+                    <input type="checkbox" name="food" id="Indian Cuisine">
+                    <label for="food">Indian Cuisine</label><br>
+                    <input type="checkbox" name="food" id="Italian Cuisine">
+                    <label for="food">Italian Cuisine</label><br>
+                    <input type="checkbox" name="food" id="Chinese Cuisine">
+                    <label for="food">Chinese Cuisine</label><br>
+                    <input type="checkbox" name="food" id="Thai Cuisine">
+                    <label for="food">Thai Cuisine</label><br>
+                    <input type="checkbox" name="food" id="French Cuisine">
+                    <label for="food">French Cuisine</label><br>
+        
+                    <br>
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state"><br>
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country">
+        
+                </div>
+                <input type="submit" onclick="addvalue()" value="Submit">
+            </form>
+        </div>
+        <div id="right">
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
